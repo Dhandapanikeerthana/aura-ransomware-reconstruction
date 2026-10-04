@@ -222,19 +222,22 @@ The application will then be available through the local development URL shown i
 
 <!-- Add your dashboard screenshot here -->
 
-![AURA Dashboard](screenshots/dashboard.png)
+![AURA Dashboard]<img width="1535" height="862" alt="Dashboard" src="https://github.com/user-attachments/assets/ac1e6255-35da-4c10-ac2a-006e9d6143f1" />
+
 
 ### Attack Timeline
 
 <!-- Add your attack timeline screenshot here -->
 
-![Attack Timeline](screenshots/attack-timeline.png)
+![Attack Timeline]<img width="1533" height="865" alt="Attack timeline" src="https://github.com/user-attachments/assets/fc17000d-8657-4eee-9848-9e6a7db68917" />
+
 
 ### Incident Analysis
 
 <!-- Add your incident analysis screenshot here -->
 
-![Incident Analysis](screenshots/incident-analysis.png)
+![Incident Analysis]<img width="1532" height="862" alt="Incident Analysis" src="https://github.com/user-attachments/assets/79068792-a2fd-4b3e-9473-c17d58111417" />
+
 
 ## 🔐 Security Note
 
