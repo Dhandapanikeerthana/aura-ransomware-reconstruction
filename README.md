@@ -1,4 +1,4 @@
-## 🛡️AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis
+# 🛡️AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis
 
 AURA is a cybersecurity incident analysis platform that reconstructs ransomware attacks from scattered security evidence and presents the findings as a clear, evidence-backed attack story.
 
