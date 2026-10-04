@@ -1,0 +1,6 @@
+{
+  "name": "AURA — Ransomware Attack Reconstruction",
+  "description": "Evidence-first post-incident investigation and attack reconstruction platform converting fragmented telemetry into verifiable attack stories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
