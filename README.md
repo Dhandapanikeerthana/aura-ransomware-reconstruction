@@ -1,100 +1,162 @@
 # AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis
 
-> **AURA** is a cybersecurity incident analysis platform that reconstructs ransomware attacks from scattered digital evidence and presents the findings as a clear, chronological attack timeline.
+> AURA is a cybersecurity incident analysis platform that reconstructs ransomware attacks from scattered security evidence and presents the findings as a clear, evidence-backed attack story.
+
+## 📌 Project Information
+
+| Category | Details |
+|---|---|
+| Project Title | Ransomware Attack Reconstruction & Evidence-Based Incident Analysis |
+| Problem Statement ID | AURA-4.1 |
+| Domain | Digital Forensics & Incident Response |
+| Team Name | Debug_Squad |
+| Focus | Ransomware Attack Reconstruction |
 
 ## 🚨 Problem Statement
 
-During a ransomware attack, evidence is often scattered across different sources such as login records, program execution logs, network activity, and file-system events.
+During a ransomware incident, security evidence can be scattered across different sources such as authentication records, process activity, system logs, network activity, and file-related events.
 
-For small organizations, colleges, and other institutions without dedicated Security Operations Center (SOC) teams, analyzing this evidence manually can be difficult and time-consuming.
+Investigators need to understand how the attack progressed and connect individual events into a meaningful sequence.
 
-The challenge is not only detecting suspicious activity, but also understanding:
+The key questions are:
 
-* **What happened?**
-* **When did it happen?**
-* **How did the attack progress?**
-* **Which activities were related to the attack?**
-* **What evidence supports each event?**
+- What happened?
+- When did it happen?
+- How did the attack progress?
+- Which events were related?
+- What evidence supports each reconstructed stage?
+- Where can security weaknesses be improved?
+
+AURA addresses this challenge by reconstructing the ransomware attack from available security evidence and presenting the investigation in an understandable form.
 
 ## 💡 Our Solution
 
-**AURA (Ransomware Attack Reconstruction & Evidence-Based Incident Analysis)** helps organize and reconstruct ransomware incidents from available digital evidence.
+AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis turns scattered security data into a clear, evidence-backed attack story.
 
-Instead of viewing individual logs separately, AURA connects relevant events and presents them as an understandable attack timeline.
+Instead of requiring investigators to manually examine individual logs separately, AURA correlates relevant events and reconstructs the attack path from entry to impact.
 
-The platform helps users move from **raw evidence → correlated events → attack timeline → incident understanding**.
+The platform helps investigators understand:
+
+- What happened
+- How the attack happened
+- When each important event occurred
+- Which evidence supports each stage
+- Where security weaknesses can be strengthened
+
+Raw Evidence → Normalized Events → Correlated Events → Attack Reconstruction → Evidence Analysis → Incident Understanding
 
 ## ✨ Key Features
 
-* 🔍 **Evidence Analysis** – Analyze different types of incident-related evidence.
-* 🕒 **Attack Timeline Reconstruction** – Arrange important events chronologically.
-* 🔗 **Event Correlation** – Connect related activities across different evidence sources.
-* 📊 **Incident Visualization** – Present attack progression in an easier-to-understand format.
-* 🛡️ **MITRE ATT&CK Mapping** – Associate observed attack activities with relevant MITRE ATT&CK techniques.
-* 📁 **Evidence-Based Analysis** – Support findings using available digital evidence.
-* ⚡ **Faster Investigation** – Reduce the effort required to manually connect scattered events.
-* 🏫 **Designed for Smaller Organizations** – Useful for environments that may not have dedicated SOC resources.
+- 🔍 Evidence Analysis – Analyze available incident-related security evidence.
+- 🕒 Attack Timeline Reconstruction – Reconstruct important events chronologically.
+- 🔗 Event Correlation – Connect related events using multiple relationships.
+- 📊 Attack Visualization – Present reconstructed activity through timelines and attack graphs.
+- 🛡️ MITRE ATT&CK Mapping – Map reconstructed activities to relevant attacker techniques.
+- 🎯 IOC Analysis – Identify and present indicators associated with the incident.
+- 📁 Evidence Linking – Connect reconstructed attack stages with supporting evidence.
+- 📋 Incident Reporting – Present the reconstructed incident in a structured format.
+- 🔎 Weakness Identification – Highlight areas where security defenses can be strengthened.
+- ⚡ Investigation Support – Reduce the effort required to manually correlate scattered security events.
 
 ## 🔄 How AURA Works
 
-```text
-        Digital Evidence
-               │
-               ▼
-     ┌───────────────────┐
-     │ Evidence Collection│
-     └─────────┬─────────┘
-               │
-               ▼
-     ┌───────────────────┐
-     │ Event Processing   │
-     └─────────┬─────────┘
-               │
-               ▼
-     ┌───────────────────┐
-     │ Event Correlation  │
-     └─────────┬─────────┘
-               │
-               ▼
-     ┌───────────────────┐
-     │ Timeline           │
-     │ Reconstruction     │
-     └─────────┬─────────┘
-               │
-               ▼
-     ┌───────────────────┐
-     │ MITRE ATT&CK       │
-     │ Mapping             │
-     └─────────┬─────────┘
-               │
-               ▼
-     ┌───────────────────┐
-     │ Incident Analysis  │
-     └───────────────────┘
-```
+Digital Evidence
+        ↓
+Log Ingestion
+        ↓
+Normalization
+        ↓
+Event Correlation
+        ↓
+AURA Reconstructor
+        ↓
+MITRE Mapping + IOC Engine + Evidence Engine
+        ↓
+Attack Timeline
+        ↓
+Attack Graph
+        ↓
+AURA Dashboard
+        ↓
+Incident Report
+
+## ⚙️ Technical Approach
+
+AURA follows an evidence-driven reconstruction pipeline.
+
+### 1. Log Ingestion
+
+Security telemetry is collected from available sources such as:
+
+- Windows Event Logs
+- Sysmon
+- Network Data
+
+### 2. Normalization
+
+Different log formats are converted into a common event structure so that events from different sources can be analyzed together.
+
+### 3. Event Correlation
+
+Related events are connected using multiple factors:
+
+- Time
+- Host
+- User
+- Process
+- Network relationships
+
+This reduces the need to manually examine every event independently.
+
+### 4. Attack Reconstruction
+
+The correlated events are used to construct the sequence of activities that occurred during the incident.
+
+### 5. Evidence Analysis
+
+AURA connects reconstructed stages with the evidence supporting those stages.
+
+### 6. MITRE ATT&CK Mapping
+
+Relevant reconstructed activities can be mapped to the MITRE ATT&CK framework to provide additional context about attacker behavior.
+
+### 7. Visualization
+
+The reconstructed incident is presented through:
+
+- Attack Timeline
+- Attack Graph
+- IOC information
+- Evidence information
+- Incident Dashboard
+- Incident Report
 
 ## 🧩 Evidence Sources
 
-AURA can work with different types of incident-related evidence, including:
+AURA is designed around multiple sources of security telemetry:
 
-* Authentication and login records
-* Program/process execution records
-* Network activity
-* File-system activity
-* Security-related logs
-* Other available forensic evidence
+### Windows Event Logs
 
-These sources can be analyzed together to build a more complete picture of the incident.
+Provides system and security-related event information that can contribute to incident reconstruction.
+
+### Sysmon
+
+Provides detailed system and process activity that can help connect events during investigation.
+
+### Network Data
+
+Provides network-level information that can help identify relationships between systems and activities.
+
+These sources can be combined to build a more complete picture of the incident.
 
 ## 🛡️ MITRE ATT&CK Integration
 
-AURA uses the **MITRE ATT&CK framework** as a reference for understanding attacker behavior.
+AURA uses the MITRE ATT&CK framework as a reference for understanding attacker behavior.
 
-Observed activities can be associated with relevant tactics and techniques, helping investigators understand the possible stages of an attack.
+Reconstructed activities can be associated with relevant tactics and techniques to help investigators understand different stages of the attack.
 
-Example:
+A ransomware incident can involve stages such as:
 
-```text
 Initial Access
       ↓
 Execution
@@ -107,114 +169,161 @@ Defense Evasion
       ↓
 Discovery
       ↓
+Lateral Movement
+      ↓
 Impact
-```
 
-## 🎯 Target Users
+The MITRE ATT&CK mapping provides additional context to the reconstructed attack sequence.
 
-AURA is designed with environments in mind where cybersecurity investigation resources may be limited:
+## 🔄 Implementation Strategy
 
-* Small and medium-sized organizations
-* Colleges and universities
-* Educational institutions
-* Small IT teams
-* Security learners and researchers
-* Incident-response teams
+AURA follows six major stages:
 
-## 🛠️ Tech Stack
+### 01. Collect
 
-### Frontend
+Gather available security telemetry from different sources.
 
-* HTML
-* CSS
-* JavaScript
-* [Add your frontend framework here if used]
+### 02. Normalize
 
-### Backend
+Convert different log formats into a common event structure.
 
-* [Add backend technology here if used]
+### 03. Correlate
 
-### AI / Data Analysis
+Connect related events using:
 
-* [Add AI/ML technologies used in your implementation]
+- Time
+- Host
+- User
+- Process
+- Network relationships
+
+### 04. Construct
+
+Build the reconstructed attack sequence from correlated events.
+
+### 05. Explain
+
+Show the evidence supporting every reconstructed attack stage.
+
+### 06. Improve
+
+Identify security weaknesses and areas for remediation.
+
+Collect → Normalize → Correlate → Construct → Explain → Improve
+
+## 🛠️ Technology Stack
+
+### Data Sources
+
+- Windows Event Logs
+- Sysmon
+- Network Data
+
+### Core Engine
+
+- Python
+
+Used for ingestion, normalization, and event correlation.
+
+### Event Processing
+
+- Pandas
+
+Used for cleaning and joining events into a common structure.
+
+### Attack Graph
+
+- NetworkX
+
+Used to represent relationships between users, hosts, processes, and network events.
+
+### Visualization
+
+- Plotly
+
+Used for interactive attack timeline and graph visualization.
+
+### Dashboard
+
+- Streamlit
+
+Used for the investigation dashboard and incident reporting interface.
+
+### Storage
+
+- SQLite / PostgreSQL
+
+Used for storing incidents and relationships between incidents and evidence.
 
 ### Security Framework
 
-* MITRE ATT&CK
+- MITRE ATT&CK
 
-### Development Tools
+Used for mapping reconstructed activities to relevant attacker techniques.
 
-* Git
-* GitHub
-* [Add other tools used in the project]
+### Development
 
-> **Note:** Update the technology list above to match the actual implementation before submitting the project.
+- Git
+- GitHub
 
-## 📂 Project Structure
+## 🧩 Challenges & Mitigation
 
-```text
-aura-ransomware-reconstruction/
-│
-├── public/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── ...
-│
-├── .env.local
-├── package.json
-├── README.md
-└── ...
-```
+| Challenge | AURA Approach |
+|---|---|
+| Fragmented logs | Unified event normalization |
+| Large event volume | Rule-based correlation |
+| False correlations | Multi-factor event correlation |
+| Missing telemetry | Evidence confidence indicators |
+| Analyst complexity | Visual timeline and attack graph |
+| Performance overhead | Lightweight processing pipeline |
 
-> The structure may vary depending on the final implementation.
+## 🎯 Target Users
 
-## 🚀 Run Locally
+### SOC / Security Teams
 
-### Prerequisites
+Provides structured incident reconstruction and investigation capabilities without requiring a large SOC team.
 
-Make sure you have:
+### Colleges & Universities
 
-* Node.js
-* npm
-* Git
+Helps security teams understand how an incident progressed across their environment.
 
-### 1. Clone the repository
+### Security Analysts
 
-```bash
-git clone https://github.com/YOUR_USERNAME/aura-ransomware-reconstruction.git
-```
+Provides evidence-linked attack stages instead of requiring manual correlation across multiple logs.
 
-### 2. Navigate to the project
+### Management
 
-```bash
-cd aura-ransomware-reconstruction
-```
+Provides an understandable incident summary and highlights identified security gaps.
 
-### 3. Install dependencies
+## 📈 Long-Term Value
 
-```bash
-npm install
-```
+AURA supports a continuous security improvement cycle:
 
-### 4. Configure the API key
+Incident Reconstruction
+        ↓
+Weakness Identification
+        ↓
+Remediation
+        ↓
+Improved Preparedness
 
-Create or update `.env.local` and add your Gemini API key:
+AURA supports future security improvement; it does not claim to guarantee ransomware prevention.
 
-```env
-GEMINI_API_KEY=your_api_key_here
-```
+## 📊 Scalability
 
-**Do not commit your `.env.local` file or expose your API key publicly.**
+AURA is designed with a scalable progression in mind:
 
-### 5. Start the development server
+Prototype
+    ↓
+College / University
+    ↓
+MSME
+    ↓
+Multi-site Organization
+    ↓
+Enterprise SOC
 
-```bash
-npm run dev
-```
-
-The application will then be available through the local development URL shown in your terminal.
+The approach can be extended as the scale and complexity of the monitored environment increases.
 
 ## 📸 Screenshots
 
@@ -239,41 +348,130 @@ The application will then be available through the local development URL shown i
 ![Incident Analysis]<img width="1532" height="862" alt="Incident Analysis" src="https://github.com/user-attachments/assets/79068792-a2fd-4b3e-9473-c17d58111417" />
 
 
+## 📂 Project Structure
+
+aura-ransomware-reconstruction/
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── attack-timeline.png
+│   └── incident-analysis.png
+│
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── engine/
+│   └── types/
+│
+├── .env.example
+├── .gitignore
+├── index.html
+├── metadata.json
+├── package.json
+├── README.md
+├── tsconfig.json
+└── vite.config.ts
+
+## 🚀 Run Locally
+
+### Prerequisites
+
+Make sure you have:
+
+- Node.js
+- npm
+- Git
+
+### 1. Clone the Repository
+
+git clone https://github.com/Dhandapanikeerthana/aura-ransomware-reconstruction.git
+
+### 2. Navigate to the Project
+
+cd aura-ransomware-reconstruction
+
+### 3. Install Dependencies
+
+npm install
+
+### 4. Configure Environment Variables
+
+If the project requires a Gemini API key, create a .env.local file and configure:
+
+GEMINI_API_KEY=your_api_key_here
+
+Never commit your actual API key to GitHub.
+
+The repository should contain only the example environment configuration.
+
+### 5. Start the Development Server
+
+npm run dev
+
+The application will be available at the local development URL displayed in the terminal.
+
 ## 🔐 Security Note
 
-AURA is intended for **defensive cybersecurity analysis, education, and incident investigation**.
+AURA is intended for:
 
-The project focuses on understanding ransomware incidents through available evidence and reconstructing attack activity. It does not provide ransomware creation or deployment functionality.
+- Defensive cybersecurity analysis
+- Digital forensics education
+- Incident investigation
+- Security research
+
+The project focuses on reconstructing and understanding ransomware incidents from available evidence.
+
+AURA does not provide ransomware creation or deployment functionality.
 
 ## 🌱 Future Enhancements
 
 Potential future improvements include:
 
-* Automated evidence ingestion
-* Support for additional log formats
-* Advanced event correlation
-* Real-time monitoring
-* Automated incident reports
-* Improved MITRE ATT&CK mapping
-* Additional visualization options
-* AI-assisted incident summarization
-* Exportable forensic investigation reports
+- Automated evidence ingestion
+- Support for additional log formats
+- Advanced event correlation
+- Real-time monitoring
+- Automated incident reports
+- Improved MITRE ATT&CK mapping
+- Additional visualization options
+- AI-assisted incident summarization
+- Exportable forensic investigation reports
+- Expanded evidence-source support
+
+## 📚 Research & References
+
+- MITRE ATT&CK – Attack techniques and adversary behavior
+- CISA – Ransomware guidance and incident-response resources
+- NIST – Cybersecurity incident response and risk-management guidance
+- CERT-In – Indian cybersecurity advisories and guidance
+- Sophos – Ransomware research covering organizations and educational institutions
+- Academic Research – Ransomware detection, attack reconstruction, digital forensics, and security-event correlation
+- Indian Incident Case Studies – C-Edge Technologies / small Indian banks – 2024
+- National Aerospace Laboratories – 2023
 
 ## 🏆 Project
 
-**AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis**
+### AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis
 
-Developed as a cybersecurity hackathon project with a focus on making ransomware incident analysis more understandable and accessible for organizations with limited security resources.
+AURA was developed as a cybersecurity hackathon project focused on making ransomware incident reconstruction more structured, understandable, and evidence-driven.
 
----
+The project focuses on helping investigators understand:
 
-## 👩‍💻 Contributors
+What happened?
+      ↓
+How did it happen?
+      ↓
+What evidence supports it?
+      ↓
+Where are the weaknesses?
+      ↓
+How can defenses be improved?
 
-Add your team members here:
+## 👩‍💻 Team
 
-* **Keerthana Dhandapani**
-* **Atchaya B** 
-* **Maha Shree M**
+### Debug_Squad
 
----
+- Keerthana D
+- Mahashree M
+- Atchay B
 
