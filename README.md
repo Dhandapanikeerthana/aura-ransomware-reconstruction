@@ -1,4 +1,4 @@
-# AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis
+# 🛡️ AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis
 
 AURA is a cybersecurity incident analysis platform that reconstructs ransomware attacks from scattered security evidence and presents the findings as a clear, evidence-backed attack story.
 
@@ -156,7 +156,7 @@ AURA uses the MITRE ATT&CK framework as a reference for understanding attacker b
 Reconstructed activities can be associated with relevant tactics and techniques to help investigators understand different stages of the attack.
 
 A ransomware incident can involve stages such as:
-
+```
 Initial Access
       ↓
 Execution
@@ -172,7 +172,7 @@ Discovery
 Lateral Movement
       ↓
 Impact
-
+```
 The MITRE ATT&CK mapping provides additional context to the reconstructed attack sequence.
 
 ## 🔄 Implementation Strategy
