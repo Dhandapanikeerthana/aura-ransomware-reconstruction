@@ -1,6 +1,6 @@
 # AURA – Ransomware Attack Reconstruction & Evidence-Based Incident Analysis
 
-> AURA is a cybersecurity incident analysis platform that reconstructs ransomware attacks from scattered security evidence and presents the findings as a clear, evidence-backed attack story.
+AURA is a cybersecurity incident analysis platform that reconstructs ransomware attacks from scattered security evidence and presents the findings as a clear, evidence-backed attack story.
 
 ## 📌 Project Information
 
@@ -329,27 +329,26 @@ The approach can be extended as the scale and complexity of the monitored enviro
 
 ### Dashboard
 
-<!-- Add your dashboard screenshot here -->
 
-![AURA Dashboard]<img width="1535" height="862" alt="Dashboard" src="https://github.com/user-attachments/assets/ac1e6255-35da-4c10-ac2a-006e9d6143f1" />
+
+<img width="1535" height="862" alt="Dashboard" src="https://github.com/user-attachments/assets/ac1e6255-35da-4c10-ac2a-006e9d6143f1" />
 
 
 ### Attack Timeline
 
-<!-- Add your attack timeline screenshot here -->
 
-![Attack Timeline]<img width="1533" height="865" alt="Attack timeline" src="https://github.com/user-attachments/assets/fc17000d-8657-4eee-9848-9e6a7db68917" />
+
+<img width="1533" height="865" alt="Attack timeline" src="https://github.com/user-attachments/assets/fc17000d-8657-4eee-9848-9e6a7db68917" />
 
 
 ### Incident Analysis
 
-<!-- Add your incident analysis screenshot here -->
 
-![Incident Analysis]<img width="1532" height="862" alt="Incident Analysis" src="https://github.com/user-attachments/assets/79068792-a2fd-4b3e-9473-c17d58111417" />
+<img width="1532" height="862" alt="Incident Analysis" src="https://github.com/user-attachments/assets/79068792-a2fd-4b3e-9473-c17d58111417" />
 
 
 ## 📂 Project Structure
-
+```
 aura-ransomware-reconstruction/
 │
 ├── screenshots/
@@ -371,7 +370,7 @@ aura-ransomware-reconstruction/
 ├── README.md
 ├── tsconfig.json
 └── vite.config.ts
-
+```
 ## 🚀 Run Locally
 
 ### Prerequisites
@@ -456,7 +455,7 @@ Potential future improvements include:
 AURA was developed as a cybersecurity hackathon project focused on making ransomware incident reconstruction more structured, understandable, and evidence-driven.
 
 The project focuses on helping investigators understand:
-
+```
 What happened?
       ↓
 How did it happen?
@@ -466,7 +465,7 @@ What evidence supports it?
 Where are the weaknesses?
       ↓
 How can defenses be improved?
-
+```
 ## 👩‍💻 Team
 
 ### Debug_Squad
